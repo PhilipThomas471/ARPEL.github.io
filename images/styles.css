@@ -1,0 +1,22 @@
+<style>
+    .logo-container {
+        width: 300px;
+        height: 300px;
+        margin: 0 auto;
+        position: relative;
+    }
+
+    .logo-container img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        border-radius: 50%; /* Faz a imagem ficar redonda */
+        padding: 10px; /* Espaço interno */
+        background: white; /* Fundo branco */
+        box-shadow: 0 0 0 5px white; /* Borda preta */
+    }
+</style>
+
+<div class="logo-container">
+    <img src="images/logo-arpel.png" alt="Logo ARPEL">
+</div>

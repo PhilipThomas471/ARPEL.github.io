@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Engenharia e Topografia</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        .logo {
+            max-width: 200px;
+            margin: 0 auto 1rem auto;
+        }
+
+        header {
+            background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('images/bg-header.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 2rem;
+            text-align: center;
+            min-height: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        nav {
+            background-color: #1a4d7c;
+            padding: 1rem;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #ffd700;
+        }
+
+        .section {
+            padding: 4rem 2rem;
+        }
+
+        .section h2 {
+            text-align: center;
+            margin-bottom: 2rem;
+            color: #1a4d7c;
+        }
+
+        .services {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .service-card {
+            background-color: #f5f5f5;
+            padding: 2rem;
+            border-radius: 8px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .service-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 4px;
+            margin-bottom: 1rem;
+        }
+
+        .about {
+            background-color: #f5f5f5;
+            text-align: center;
+        }
+
+        .about p {
+            max-width: 800px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+
+        .contact {
+            background-color: #1a4d7c;
+            color: white;
+        }
+
+        .contact h2 {
+            color: white !important; /* Override the default section h2 color */
+        }
+
+        .contact-info {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .contact-info p {
+            margin: 1rem 0;
+        }
+
+        footer {
+            background-color: #133656;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+        }
+
+        .logo-container {
+            background-color: transparent;
+            border-radius: 50%;
+            width: 250px;
+            height: 250px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 2rem auto;
+            padding: 1rem;
+        }
+
+        .logo-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            border-radius: 50%;
+            padding: 5px;
+            background: white;
+            box-shadow: 0 0 0 0px white;
+        }
+
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                text-align: center;
+                gap: 1rem;
+            }
+
+            .services {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header id="inicio">
+        <div class="logo-container">
+            <img src="images/logo-arpel.png" alt="Logo ARPEL Engenharia e Topografia">
+        </div>
+        <h1>Engenharia e Topografia</h1>
+        <p>Excelência em Serviços de Engenharia e Topografia</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#inicio">Início</a></li>
+            <li><a href="#servicos">Serviços</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#contato">Contato</a></li>
+        </ul>
+    </nav>
+
+    <section id="servicos" class="section">
+        <h2>Nossos Serviços</h2>
+        <div class="services">
+            <div class="service-card">
+                <img src="images/levantamento.jpg" alt="Levantamento Topográfico - Topógrafo utilizando estação total">
+                <h3>Levantamento Topográfico</h3>
+                <p>Medições precisas para seu terreno com equipamentos de última geração para projetos, obras e documentação.</p>
+            </div>
+            <div class="service-card">
+                <img src="images/georreferenciamento.jpg" alt="Georreferenciamento - Equipamento GPS em campo">
+                <h3>Georreferenciamento</h3>
+                <p>Localização exata e documentação completa para seu imóvel rural, atendendo às normas do INCRA.</p>
+            </div>
+            <div class="service-card">
+                <img src="images/demarcacao.jpg" alt="Demarcação - Marco topográfico e equipamento">
+                <h3>Demarcação de Terrenos</h3>
+                <p>Definição clara dos limites da sua propriedade com marcos e documentação completa.</p>
+            </div>
+	    <div class="service-card">
+                <img src="images/viario.jpg" alt="Demarcação - Marco topográfico e equipamento">
+                <h3>Projetos viarios</h3>
+                <p>Precisão e eficiência, utilizando equipamentos avançados de ultima geração para execução de obras viárias.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="sobre" class="section about">
+        <h2>Sobre Nós</h2>
+        <p>A ARPEL Engenharia e Topografia é uma empresa especializada em serviços de topografia e engenharia, com mais de 15 anos de experiência no mercado. Contamos com uma equipe altamente qualificada e equipamentos de última geração para garantir a precisão e qualidade em todos os nossos serviços.</p>
+    </section>
+
+    <section id="contato" class="section contact">
+        <h2>Contato</h2>
+        <div class="contact-info">
+	    Telefone
+            <p>📞 (41) 9 8487-3384</p>
+	    E-mail
+            <p>✉️ arpelengtop@gmai.com</p>            
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 ARPEL Engenharia e Topografia - Todos os direitos reservados</p>
+    </footer>
+</body>
+</html>
